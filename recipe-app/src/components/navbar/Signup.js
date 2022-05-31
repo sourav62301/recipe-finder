@@ -17,7 +17,7 @@ export default function Signup() {
       alert("Enter Email or Password !!");
     }
     axios
-      .post("http://localhost:5000/users", { email, password })
+      .post("https://git.heroku.com/recipe-finder-sourav.git/users", { email, password })
       .then(({ data }) => setUser(data))
       .catch((error) => console.log(error));
   }
